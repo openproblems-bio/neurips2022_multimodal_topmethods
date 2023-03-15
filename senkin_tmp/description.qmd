@@ -4,6 +4,8 @@ format: gfm
 
 # 2nd place solution
 
+You can find the code here: [(https://github.com/senkin13/kaggle/tree/master/Open-Problems-Multimodal-Single-Cell-Integration-2nd-Place-Solution)]
+
 ## Overview
 
 ### CITEseq
