@@ -79,8 +79,8 @@ models I used and I will also release the code later.
   didn’t work very well. But my method seemed to work even better than
   simple MLP.
 
-[Demo
-notebook](https://www.kaggle.com/oliverwang15/4th-solution-cite-nn)
+  [Demo
+  notebook](https://www.kaggle.com/oliverwang15/4th-solution-cite-nn)
 
 - `CNN`: Inspired by the tmp method
   [here](https://www.kaggle.com/competitions/lish-moa/discussion/202256)
@@ -90,16 +90,16 @@ notebook](https://www.kaggle.com/oliverwang15/4th-solution-cite-nn)
   [here](https://www.kaggle.com/code/pourchot/all-in-one-citeseq-multiome-with-keras)
   and only some tiny change was made.
 
-[Demo
-notebook](https://www.kaggle.com/code/oliverwang15/4th-solution-cite-online-nn)
+  [Demo
+  notebook](https://www.kaggle.com/code/oliverwang15/4th-solution-cite-online-nn)
 
 - `Kernel Rigde`: This model is inspired by the best solution of last
   year’s competition. I used [Ray
   Tune](https://docs.ray.io/en/master/tune/index.html) to optimize the
   hypermeters
 
-[Demo notebook with ray
-tune](https://www.kaggle.com/code/oliverwang15/4th-solution-ray-tune-krr)
+  [Demo notebook with ray
+  tune](https://www.kaggle.com/code/oliverwang15/4th-solution-ray-tune-krr)
 
 - `Catboost`: There are many options for `catboost` here. Using
   `MultiOutputRegressor` or `MultiRMSE` as `objective`. But we can’t do
@@ -113,8 +113,8 @@ tune](https://www.kaggle.com/code/oliverwang15/4th-solution-ray-tune-krr)
   it up in the stacking. However, I still trained a independent LGBM
   model and used it in the final training.
 
-[Demo
-notebook](https://www.kaggle.com/code/oliverwang15/4th-solution-cite-multioutputlgbm)
+  [Demo
+  notebook](https://www.kaggle.com/code/oliverwang15/4th-solution-cite-multioutputlgbm)
 
 - `stacking`: I used `KNN`, `CNN`, `ridge,rf`, `catboost`, `NN` in the
   first layer and only `CNN`, `catboost`, `NN` in the second and just a
@@ -124,15 +124,13 @@ notebook](https://www.kaggle.com/code/oliverwang15/4th-solution-cite-multioutput
   little bit to understand so you may refer to the picture. If you still
   have confusion please feel free to ask me.
 
-[Demo notebook
-train](https://www.kaggle.com/code/oliverwang15/4th-solution-cite-stacking-train)
+  [Demo notebook
+  train](https://www.kaggle.com/code/oliverwang15/4th-solution-cite-stacking-train)
 
-[Demo notebook
-predict](https://www.kaggle.com/code/oliverwang15/4th-solution-cite-stacking-predict)
+  [Demo notebook
+  predict](https://www.kaggle.com/code/oliverwang15/4th-solution-cite-stacking-predict)
 
 ![](images/inbox_2641164_2dedb86bf1f9498fb9da9232da1e579a_Stacking%20Training.png)
-
-### Training
 
 | CV Results | Model Ⅰ (vaild 32606) | Model Ⅱ (vaild 13176) | Model Ⅲ (vaild 31800) |
 |------------|-----------------------|-----------------------|-----------------------|
