@@ -1,25 +1,29 @@
 
 # 2nd place solution
 
+You can find the code on github
+[here](https://github.com/senkin13/kaggle/tree/master/Open-Problems-Multimodal-Single-Cell-Integration-2nd-Place-Solution)
+
 ## Overview
 
 ### CITEseq
 
-![](https://postimg.cc/s1XNhL6m.png)
+![](images/citeseq.png)
 
 ### Multiome
 
-![](https://postimg.cc/sMwW7T0P.png)
+![](images/multi.png)
 
 ## preprocessing
 
 1.  centered log ratio transformation (CLR) is the best normalization
     method for both of cite and multi, I found the method from nature
-    articles. [](https://www.nature.com/articles/s41467-022-29356-8)
+    articles. <https://www.nature.com/articles/s41467-022-29356-8>
 
 2.  high correlation raw features with target
 
-3.  @baosenguo designed fine tuned process
+3.  [@baosenguo](https://www.kaggle.com/baosenguo) designed fine tuned
+    process
 
 using raw count: normalization:sample normalization by mean values over
 features transformation:sqrt transformation standardization:feature
