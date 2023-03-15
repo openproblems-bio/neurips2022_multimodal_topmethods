@@ -1,8 +1,8 @@
 
 # 3rd place solution
 
-You can find the code here:
-[](https://github.com/makotu1208/open-problems-multimodal-3rd-solution)
+You can find the code on github
+[here](https://github.com/makotu1208/open-problems-multimodal-3rd-solution).
 
 ## Multiome
 
@@ -10,7 +10,7 @@ You can find the code here:
 
 - use okapi bm25 instead of tfidf
 - dimensionality reduction：use lsi(implemented in muon) instead of svd
-  [](https://muon.readthedocs.io/en/latest/api/generated/muon.atac.tl.lsi.html)
+  <https://muon.readthedocs.io/en/latest/api/generated/muon.atac.tl.lsi.html>
   muon.atac.tl.lsi(rawdata(with okapi preprocessing), n_comps=64)
 
 ### feature
@@ -23,12 +23,12 @@ following features also contributed somewhat to the accuracy.
 - w2v vector feature For each cell, the top100 with the highest
   expression levels were lined up and vectorized by gensim to get
   feature vector(16dims) for each gene.
-  [](https://radimrehurek.com/gensim/models/word2vec.html) Ex. CellA:
+  <https://radimrehurek.com/gensim/models/word2vec.html> Ex. CellA:
   geneB → geneE → geneF → … CellB: geneA → geneC → geneM → … top100
   genes vector average in each cell used as features.
 - leiden cluster mean feature I made Clusters using muon’s leiden
   clustering(23 cluster).
-  https://muon.readthedocs.io/en/latest/api/generated/muon.tl.leiden.html#muon.tl.leiden
+  <https://muon.readthedocs.io/en/latest/api/generated/muon.tl.leiden.html#muon.tl.leiden>
   After taking the average of the features for each cluster(23 cluster ×
   228942 feat), they were reduced to 16 dimensions by svd and used as
   features(23 cluster × 16feat). After that, join on clusters.
