@@ -6,7 +6,7 @@ You can find the code on github
 
 ## Multiome
 
-### Model Overwiew
+### Model Overview
 
 ![](images/multiome_model_overview.png)
 
@@ -21,8 +21,8 @@ You can find the code on github
 tSVD-based imputation method:
 
 1.  Perform dimensionality reduction on the data with tSVD
-2.  And then, Transform the data back to the original space
-3.  Copy the value of the 0 part of the original data from the
+2.  and then, Transform the data back to the original space
+3.  copy the value of the 0 part of the original data from the
     transformed values.
 
 ### Model
