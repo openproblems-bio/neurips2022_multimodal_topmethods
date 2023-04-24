@@ -1,0 +1,27 @@
+functionality:
+  name: shuji_suzuki
+  description: ""
+  arguments:
+    - name: "--input"
+      type: file
+    - name: "--output"
+      type: file
+      direction: output
+  resources:
+    - type: bash_script
+      path: script.sh
+    - path: resources
+platforms:
+  - type: docker
+    image: python:3.10
+    setup:
+      - type: apt
+        packages: [ git, unzip ]
+      - type: docker
+        run: |
+          git clone https://github.com/shu65/open-problems-multimodal.git /opt/shu65_openproblems && \
+            pip install --editable /opt/shu65_openproblems
+      - type: python
+        pypi:
+          - anndata~=0.8
+    
