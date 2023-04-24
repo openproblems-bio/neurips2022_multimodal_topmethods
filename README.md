@@ -8,13 +8,13 @@ You can find the Kaggle competition leaderboard
 
 | Pos | Team                        | Solution                                 |
 |-----|-----------------------------|------------------------------------------|
-| 1   | Shuji Suzuki                | [solution](/shuji_suzuki/description.md) |
-| 2   | senkin & tmp                | [solution](/senkin_tmp/description.md)   |
-| 3   | Makotu                      | [solution](/makotu/description.md)       |
-| 4   | Oliver Wang                 | [solution](/oliver_wang/description.md)  |
-| 5   | Lucky Shake                 | [solution](/lucky_shake/desciption.md)   |
-| 6   | \[Risk-ZaloPay\] Aggressive | [solution](/aggressive/description.md)   |
-| 7   | chromosom                   | [solution](/chromosom/description.md)    |
-| 8   | vialactea                   | [solution](/vialactea/description.md)    |
+| 1   | Shuji Suzuki                | [solution](src/shuji_suzuki/description.md) |
+| 2   | senkin & tmp                | [solution](src/senkin_tmp/description.md)   |
+| 3   | Makotu                      | [solution](src/makotu/description.md)       |
+| 4   | Oliver Wang                 | [solution](src/oliver_wang/description.md)  |
+| 5   | Lucky Shake                 | [solution](src/lucky_shake/desciption.md)   |
+| 6   | \[Risk-ZaloPay\] Aggressive | [solution](src/aggressive/description.md)   |
+| 7   | chromosom                   | [solution](src/chromosom/description.md)    |
+| 8   | vialactea                   | [solution](src/vialactea/description.md)    |
 | 9   | VHI                         | no solution posted                       |
 | 10  | \[Rist\]e-toppo             | no solution posted                       |

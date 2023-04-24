@@ -1,0 +1,22 @@
+functionality:
+  name: compress_data
+  arguments:
+    - name: "--input"
+      type: file
+    - name: "--output"
+      type: file
+      direction: output
+  resources:
+    - type: python_script
+      path: script.py
+platforms:
+  - type: docker
+    image: python:3.10
+    setup:
+      - type: python
+        pypi:
+          - numpy
+          - pandas
+          - scipy
+          - pyarrow
+          - tables

@@ -1,0 +1,21 @@
+functionality:
+  name: shu_multi
+  description: ""
+  arguments:
+    - name: "--input"
+      type: file
+    - name: "--output"
+      type: file
+      direction: output
+  resources:
+    - type: python_script
+      path: script.py
+platforms:
+  - type: native
+  - type: docker
+    image: python:3.10
+    setup:
+      - type: python
+        pypi:
+          - anndata~=0.8
+          
