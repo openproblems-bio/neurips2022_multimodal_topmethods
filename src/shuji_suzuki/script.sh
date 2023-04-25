@@ -1,6 +1,6 @@
 #/bin/bash
 
-res=/opt/
+res=/opt
 
 ## VIASH START
 meta_resources_dir=src/shuji_suzuki
