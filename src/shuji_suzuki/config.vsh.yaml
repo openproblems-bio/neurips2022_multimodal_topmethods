@@ -18,9 +18,13 @@ platforms:
       - type: apt
         packages: [ git, unzip ]
       - type: docker
-        run: |
-          git clone https://github.com/shu65/open-problems-multimodal.git /opt/shu65_openproblems && \
-            pip install --editable /opt/shu65_openproblems
+        run: 
+          - git clone https://github.com/shu65/open-problems-multimodal.git /opt/shu65_openproblems && pip install --editable /opt/shu65_openproblems
+          - wget https://ftp.ebi.ac.uk/pub/databases/genenames/hgnc/tsv/hgnc_complete_set.txt -O "/opt/hgnc_complete_set.txt"
+          - wget https://reactome.org/download/current/ReactomePathways.gmt.zip -O "/opt/ReactomePathways.gmt.zip" &&
+              unzip "/opt/ReactomePathways.gmt.zip" -d "/opt" && 
+              rm "/opt/ReactomePathways.gmt.zip"
+
       - type: python
         pypi:
           - anndata~=0.8
