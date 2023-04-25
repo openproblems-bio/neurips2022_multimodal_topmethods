@@ -19,3 +19,10 @@ You can find the Kaggle competition leaderboard [here](https://www.kaggle.com/co
 |8|vialactea|[solution](/vialactea/description.md)|
 |9|VHI|no solution posted|
 |10|\[Rist\]e-toppo|no solution posted|
+
+## Fetch data
+
+```
+kaggle competitions download -c open-problems-multimodal
+unzip open-problems-multimodal.zip -d sample_data
+```
