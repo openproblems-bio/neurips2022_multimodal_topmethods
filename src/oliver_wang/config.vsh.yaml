@@ -1,0 +1,24 @@
+functionality:
+  name: oliver_wang
+  description: ""
+  arguments:
+    - name: "--input"
+      type: file
+    - name: "--output"
+      type: file
+      direction: output
+  resources:
+    - type: bash_script
+      path: script.sh
+    # - path: /resources
+platforms:
+  - type: docker
+    image: python:3.10
+    setup:
+      - type: apt
+        packages: [ git]
+      - type: docker
+        run: 
+          - git clone https://github.com/oliverwang15/4th-Place-Solution-for-Open-Problems-Multimodal-Single-Cell.git /opt/wang_openproblems
+      - type: python
+        pypi: [papermill, pandas, numpy, scipy, scikit-learn, seaborn, umap, numba, matplotlib, tqdm, torch, catboost, ray, lightgbm, joblib, colorama, cycler, Ipython,]
