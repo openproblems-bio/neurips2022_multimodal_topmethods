@@ -20,5 +20,6 @@ platforms:
       - type: docker
         run: 
           - git clone https://github.com/oliverwang15/4th-Place-Solution-for-Open-Problems-Multimodal-Single-Cell.git /opt/wang_openproblems
+          - pip install --upgrade pip ipython ipykernel && ipython kernel install --name "python3" --user
       - type: python
-        pypi: [papermill, pandas, numpy, scipy, scikit-learn, seaborn, umap, numba, matplotlib, tqdm, torch, catboost, ray, lightgbm, joblib, colorama, cycler, Ipython,]
+        pypi: [papermill, pandas, numpy, scipy, scikit-learn, seaborn, umap-learn, numba, matplotlib, tqdm, torch, catboost, ray, lightgbm, joblib, colorama, cycler, Ipython,]
