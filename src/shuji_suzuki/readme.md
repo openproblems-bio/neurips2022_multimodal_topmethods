@@ -6,7 +6,7 @@ You can find the code on github
 
 ## Multiome
 
-### Model Overwiew
+### Model Overview
 
 ![](images/multiome_model_overview.png)
 
@@ -21,8 +21,8 @@ You can find the code on github
 tSVD-based imputation method:
 
 1.  Perform dimensionality reduction on the data with tSVD
-2.  And then, Transform the data back to the original space
-3.  Copy the value of the 0 part of the original data from the
+2.  and then, Transform the data back to the original space
+3.  copy the value of the 0 part of the original data from the
     transformed values.
 
 ### Model
@@ -92,3 +92,35 @@ I used the weighted average of predictions of the following models.
       4, 7 only, etc.
     - Use a model trained on the full training data set as a
       pre-training model
+
+## Development setup
+
+Download resources
+
+``` bash
+res_dir=src/shuji_suzuki/resources
+mkdir -p "$res_dir"
+wget https://ftp.ebi.ac.uk/pub/databases/genenames/hgnc/tsv/hgnc_complete_set.txt -O "$res_dir/hgnc_complete_set.txt"
+wget https://reactome.org/download/current/ReactomePathways.gmt.zip -O "$res_dir/ReactomePathways.gmt.zip" &&
+  unzip "$res_dir/ReactomePathways.gmt.zip" -d "$res_dir" && 
+  rm "$res_dir/ReactomePathways.gmt.zip"
+```
+
+Clone repo
+
+``` bash
+echo shu65_openproblems > src/shuji_suzuki/.gitignore
+git clone https://github.com/shu65/open-problems-multimodal.git src/shuji_suzuki/shu65_openproblems
+```
+
+## Executing the method
+
+Run method
+
+``` bash
+viash run src/shuji_suzuki/config.vsh.yaml -- \
+  --input sample_data \
+  --output output \
+  ---memory 100GB \
+  ---cpus 30
+```

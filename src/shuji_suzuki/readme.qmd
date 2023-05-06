@@ -8,7 +8,7 @@ You can find the code on github [here](https://github.com/shu65/open-problems-mu
 
 ## Multiome
 
-### Model Overwiew
+### Model Overview
 
 ![](images/multiome_model_overview.png)
 
@@ -23,8 +23,8 @@ You can find the code on github [here](https://github.com/shu65/open-problems-mu
 tSVD-based imputation method:
 
 1. Perform dimensionality reduction on the data with tSVD
-2. And then, Transform the data back to the original space
-3. Copy the value of the 0 part of the original data from the transformed values.
+2. and then, Transform the data back to the original space
+3. copy the value of the 0 part of the original data from the transformed values.
 
 ### Model
 
@@ -86,3 +86,43 @@ I used the weighted average of predictions of the following models.
     - Batch combination pattern examples: males only, female only, Day 4, 7 only, etc.
     - Use a model trained on the full training data set as a pre-training model
 
+
+## Development setup
+Initialise resources dir
+
+```bash
+res_dir=src/shuji_suzuki/resources
+echo resources > src/shuji_suzuki/.gitignore
+mkdir -p "$res_dir"
+```
+
+Download hgnc tsv file
+```bash
+wget https://ftp.ebi.ac.uk/pub/databases/genenames/hgnc/tsv/hgnc_complete_set.txt -O "$res_dir/hgnc_complete_set.txt"
+```
+
+Download reactome file
+
+```bash
+wget https://reactome.org/download/current/ReactomePathways.gmt.zip -O "$res_dir/ReactomePathways.gmt.zip" &&
+  unzip "$res_dir/ReactomePathways.gmt.zip" -d "$res_dir" && 
+  rm "$res_dir/ReactomePathways.gmt.zip"
+```
+
+Clone repo
+
+```bash
+
+git clone https://github.com/shu65/open-problems-multimodal.git "$res_dir/shu65_openproblems"
+```
+
+## Executing the method
+
+Run method
+```bash
+viash run src/shuji_suzuki/config.vsh.yaml -- \
+  --input sample_data \
+  --output output \
+  ---memory 100GB \
+  ---cpus 30
+```

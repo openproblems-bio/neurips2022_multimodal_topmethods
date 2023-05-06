@@ -1,0 +1,22 @@
+functionality:
+  name: makotu
+  description: ""
+  arguments:
+    - name: "--input"
+      type: file
+    - name: "--output"
+      type: file
+      direction: output
+  resources:
+    - type: bash_script
+      path: script.sh
+    - path: resources
+platforms:
+  - type: docker
+    image: python:3.8.10
+    setup:
+      - type: apt
+        packages: [ git]
+      - type: docker
+        run: 
+          - git clone https://github.com/makotu1208/open-problems-multimodal-3rd-solution.git /opt/makotu_openproblems && pip install -r /opt/makotu_openproblems/requirements.txt
