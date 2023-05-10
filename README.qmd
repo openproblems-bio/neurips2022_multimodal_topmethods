@@ -12,7 +12,7 @@ You can find the Kaggle competition leaderboard [here](https://www.kaggle.com/co
 |1|Shuji Suzuki|[readme](src/shuji_suzuki/readme.md)|[viash](src/shuji_suzuki)|
 |2|senkin & tmp|[readme](src/senkin_tmp/readme.md)|[github](https://github.com/senkin13/kaggle/tree/master/Open-Problems-Multimodal-Single-Cell-Integration-2nd-Place-Solution)|
 |3|Makotu|[readme](src/makotu/readme.md)|[viash](src/makotu)|
-|4|Oliver Wang|[readme](src/oliver_wang/readme.md)|[github](https://github.com/oliverwang15/4th-Place-Solution-for-Open-Problems-Multimodal-Single-Cell) [viash](src/oliver_wang) [kaggle](https://www.kaggle.com/oliverwang15/code)|
+|4|Oliver Wang|[readme](src/oliver_wang/readme.md)|[github](https://github.com/oliverwang15/4th-Place-Solution-for-Open-Problems-Multimodal-Single-Cell), [viash](src/oliver_wang), [kaggle](https://www.kaggle.com/oliverwang15/code)|
 |5|Lucky Shake|[readme](src/lucky_shake/desciption.md)|[kaggle](https://www.kaggle.com/qqzzxxdd/code)|
 |6|\[Risk-ZaloPay\] Aggressive|[readme](src/aggressive/readme.md)| unknown |
 |7|chromosom|[readme](src/chromosom/readme.md)| unknown |
