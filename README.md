@@ -26,11 +26,11 @@ You can find the Kaggle competition leaderboard
     kaggle datasets download -d ryanholbrook/open-problems-raw-counts
     unzip open-problems-raw-counts.zip -d resources
 
-## conversion to viash
+## Conversion to viash
 
 ### Shuji Suzuki
 
-OK, converted to viash component
+OK, converted to viash component.
 
 ### Senkin & tmp
 

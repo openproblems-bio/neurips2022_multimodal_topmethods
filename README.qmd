@@ -29,11 +29,11 @@ kaggle datasets download -d ryanholbrook/open-problems-raw-counts
 unzip open-problems-raw-counts.zip -d resources
 ```
 
-## conversion to viash
+## Conversion to viash
 
 ### Shuji Suzuki
 
-OK, converted to viash component
+OK, converted to viash component.
 
 ### Senkin & tmp
 
@@ -65,7 +65,7 @@ NOK, code storage is unknown.
 
 ### VHI
 
-NOK, notebook is  stored on kaggle.
+NOK, notebook is stored on kaggle.
 
 ### \[Rist\]e-toppo
 
