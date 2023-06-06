@@ -7,22 +7,66 @@ You can find the Kaggle competition leaderboard [here](https://www.kaggle.com/co
 
 ## Top of the leaderboard
 
-|Pos|Team|Solution|
-|---|---|---|
-|1|Shuji Suzuki|[solution](/shuji_suzuki/readme.md)|
-|2|senkin & tmp|[solution](/senkin_tmp/readme.md)|
-|3|Makotu|[solution](/makotu/readme.md)|
-|4|Oliver Wang|[solution](/oliver_wang/readme.md)|
-|5|Lucky Shake|[solution](/lucky_shake/desciption.md)|
-|6|\[Risk-ZaloPay\] Aggressive|[solution](/aggressive/readme.md)|
-|7|chromosom|[solution](/chromosom/readme.md)|
-|8|vialactea|[solution](/vialactea/readme.md)|
-|9|VHI|no solution posted|
-|10|\[Rist\]e-toppo|no solution posted|
+|Pos|Team|solution|code|
+|---|---|---|----|
+|1|Shuji Suzuki|[readme](src/shuji_suzuki/readme.md)|[viash](src/shuji_suzuki)|
+|2|senkin & tmp|[readme](src/senkin_tmp/readme.md)|[github](https://github.com/senkin13/kaggle/tree/master/Open-Problems-Multimodal-Single-Cell-Integration-2nd-Place-Solution)|
+|3|Makotu|[readme](src/makotu/readme.md)|[viash](src/makotu)|
+|4|Oliver Wang|[readme](src/oliver_wang/readme.md)|[github](https://github.com/oliverwang15/4th-Place-Solution-for-Open-Problems-Multimodal-Single-Cell), [viash](src/oliver_wang), [kaggle](https://www.kaggle.com/oliverwang15/code)|
+|5|Lucky Shake|[readme](src/lucky_shake/desciption.md)|[kaggle](https://www.kaggle.com/qqzzxxdd/code)|
+|6|\[Risk-ZaloPay\] Aggressive|[readme](src/aggressive/readme.md)| unknown |
+|7|chromosom|[readme](src/chromosom/readme.md)| unknown |
+|8|vialactea|[readme](src/vialactea/readme.md)| unknown |
+|9|VHI|no solution posted| [kaggle](https://www.kaggle.com/code/dvmodeler/silver-place-post-processing-transform) |
+|10|\[Rist\]e-toppo|no solution posted| unknown |
 
 ## Fetch data
 
 ```
 kaggle competitions download -c open-problems-multimodal
-unzip open-problems-multimodal.zip -d sample_data
+unzip open-problems-multimodal.zip -d resources
+kaggle datasets download -d ryanholbrook/open-problems-raw-counts
+unzip open-problems-raw-counts.zip -d resources
 ```
+
+## Conversion to viash
+
+### Shuji Suzuki
+
+OK, converted to viash component.
+
+### Senkin & tmp
+
+NOK, competition code is stored in a directory in a repo with all kaggle competitions.
+
+### Makotu
+
+NOK, converted to viash but not able to test as the depedencies in the requirements file gives an error.
+
+### Oliver Wang
+
+NOK, partly converted to viash but some notebooks are stored on kaggle. It is also not clear in which order the notebooks need to be run.
+
+### Lucky shake
+
+NOK, notebooks are stored on Kaggle.
+
+### \[Risk-ZaloPay\]
+
+NOK, code storage is unknown.
+
+### chromosom
+
+NOK, code storage is unknown.
+
+### vialactea
+
+NOK, code storage is unknown.
+
+### VHI
+
+NOK, notebook is stored on kaggle.
+
+### \[Rist\]e-toppo
+
+NOK, code storage is unknown.
